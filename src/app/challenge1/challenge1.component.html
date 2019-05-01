@@ -1,0 +1,11 @@
+<h2>Challenge 1</h2>
+<button (click)="fetchPeople()">People</button>
+<button (click)="fetchPlanets()">Planets</button>
+<button (click)="fetchStarships()">Starships</button>
+<button (click)="fetchSpecies()">Species</button>
+
+<ul>
+  <li *ngFor="let item of data">
+    {{ item.name }}
+  </li>
+</ul>

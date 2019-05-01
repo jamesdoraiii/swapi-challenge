@@ -1,0 +1,17 @@
+<h2>Challenge 2</h2>
+
+<select [(ngModel)] = "selectedPerson" name = "character" (change) = "displayData($event)">
+  <option
+    *ngFor= "let person of people"
+    value = '{{ person.name }}' >{{ person.name }}
+    
+  </option>
+</select>
+
+  <button (click)="displayData()">test</button>
+
+<div *ngIf="selectedPerson">
+  <p>{{ selectedPerson }}</p>
+</div>
+
+
